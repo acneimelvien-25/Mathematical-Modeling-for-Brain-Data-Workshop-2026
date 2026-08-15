@@ -11,9 +11,3 @@ Each teaching slot has a dedicated folder modeled on the day-by-day structure of
 5. [Probability and Uncertainty in Neural Modeling](2026-09-25-session-05-probability-and-uncertainty/)
 6. [Linear Regression and the General Linear Model](2026-09-25-session-06-linear-regression-and-glm/)
 7. [Project: Applying Neural Models to Biological Problems](2026-09-26-session-07-capstone-project/)
-
-## Material status
-
-All folders are placeholders until the assigned speaker or facilitation team supplies approved public files. A checked item in a session page means that the corresponding file or link is available.
-
-Speakers and maintainers should follow [`CONTRIBUTING.md`](../CONTRIBUTING.md) before uploading material.
