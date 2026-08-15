@@ -2,8 +2,7 @@
 
 - **Date:** 23 September 2026
 - **Time:** 18:00-20:00 UTC
-- **Speaker:** TBA
-- **Material status:** Pending
+- **Speaker:** Anastasia S
 
 ## Overview
 
@@ -23,10 +22,3 @@ This session moves from individual neurons to populations and explores how inter
 ## Learning outcome
 
 Participants should understand how groups of neurons can be modeled mathematically, how excitatory and inhibitory interactions can generate stable or oscillatory activity, and why connectivity matters for emergent brain behavior.
-
-## Materials
-
-- [ ] Slides - add `slides.pdf`
-- [ ] Notebook or code - add the file and link it here
-- [ ] Data or exercises - add the file or an access link
-- [ ] Recommended resources - add `resources.md`
