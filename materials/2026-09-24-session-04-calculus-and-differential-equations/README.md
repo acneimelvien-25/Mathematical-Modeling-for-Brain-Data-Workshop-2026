@@ -2,8 +2,7 @@
 
 - **Date:** 24 September 2026
 - **Time:** 18:00-20:00 UTC
-- **Speaker:** TBA
-- **Material status:** Pending
+- **Speaker:** Kira
 
 ## Overview
 
@@ -24,10 +23,3 @@ This session explains how calculus and differential equations describe neural pr
 ## Learning outcome
 
 Participants should be able to explain rate of change, equilibrium, stability, and time evolution in simple neural models.
-
-## Materials
-
-- [ ] Slides - add `slides.pdf`
-- [ ] Notebook or code - add the file and link it here
-- [ ] Data or exercises - add the file or an access link
-- [ ] Recommended resources - add `resources.md`
