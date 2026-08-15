@@ -2,8 +2,7 @@
 
 - **Date:** 25 September 2026
 - **Time:** To be confirmed
-- **Speaker:** TBA
-- **Material status:** Pending
+- **Speaker:** Hubert
 
 ## Overview
 
@@ -24,10 +23,3 @@ This session moves from relationships between variables to prediction, model fit
 ## Learning outcome
 
 Participants should understand linear regression as a mathematical model connecting predictors to outcomes, express it in matrix form, and recognize the GLM as a general framework for analyzing neural and neuroimaging data.
-
-## Materials
-
-- [ ] Slides - add `slides.pdf`
-- [ ] Notebook or code - add the file and link it here
-- [ ] Data or exercises - add the file or an access link
-- [ ] Recommended resources - add `resources.md`
