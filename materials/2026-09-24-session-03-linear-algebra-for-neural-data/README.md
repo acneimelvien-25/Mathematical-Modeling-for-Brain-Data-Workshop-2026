@@ -2,8 +2,7 @@
 
 - **Date:** 24 September 2026
 - **Time:** 09:00-11:00 UTC
-- **Speaker:** TBA
-- **Material status:** Pending
+- **Speaker:** Waliy
 
 ## Overview
 
@@ -23,10 +22,3 @@ This session develops the linear-algebra intuition needed to represent and compa
 ## Learning outcome
 
 Participants should be able to interpret neural activity as mathematical objects and reason about patterns, distances, similarities, and transformations in neural data.
-
-## Materials
-
-- [ ] Slides - add `slides.pdf`
-- [ ] Notebook or code - add the file and link it here
-- [ ] Data or exercises - add the file or an access link
-- [ ] Recommended resources - add `resources.md`
