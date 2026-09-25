@@ -1,6 +1,6 @@
 # General resources
 
-This folder will contain resources that apply across several workshop sessions.
+This folder contains resources that apply across several workshop sessions.
 
 This may include:
 - Recommended introductory neuroscience reading
