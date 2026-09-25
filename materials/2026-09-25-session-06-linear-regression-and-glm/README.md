@@ -1,7 +1,7 @@
 # Session 6: Linear Regression and the General Linear Model
 
 - **Date:** 25 September 2026
-- **Time:** To be confirmed
+- **Time:** 18:00 - 20 UTC
 - **Speaker:** Hubert Apana
 
 ## Overview
