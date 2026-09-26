@@ -1,4 +1,4 @@
-# Project 06 — Fit a Linear Model to Neural Responses
+# Project 03 — Fit a Linear Model to Neural Responses
 
 A **one-day project** for MAMBA Workshop 2026 participants.
 See `student/exercise_handout.docx` (or `.pdf`) for the full brief.
