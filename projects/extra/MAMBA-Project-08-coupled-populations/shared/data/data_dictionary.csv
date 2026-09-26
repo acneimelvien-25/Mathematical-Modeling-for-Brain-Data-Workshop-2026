@@ -1,0 +1,7 @@
+file,column,type,units,description
+fit_timeseries.csv,w,float,-,Coupling strength for this block of rows (subthreshold; see README)
+fit_timeseries.csv,time,float,time units (tau=1),Time within this w-block's simulation
+fit_timeseries.csv,x0 .. x4,float,arbitrary activity units,Node i's activity at this time (noisy)
+holdout_timeseries.csv,w,float,-,Coupling strength for this block of rows (near/above threshold; see README)
+holdout_timeseries.csv,time,float,time units (tau=1),Time within this w-block's simulation
+holdout_timeseries.csv,x0 .. x4,float,arbitrary activity units,Node i's activity at this time (noise-free)

@@ -1,0 +1,10 @@
+file,column,type,units,description
+trials.csv,trial_index,int,-,0-indexed trial order (joins to channel_responses.csv)
+trials.csv,block_index,int,-,Which consecutive block of trials this trial belongs to (0-39)
+trials.csv,condition,int (0/1),-,Task condition for this trial's block (constant within a block)
+trials.csv,trial_role,str,-,'discovery' or 'replication' -- see shared/data/README.md
+channel_responses.csv,trial_index,int,-,Joins to trials.csv
+channel_responses.csv,ch00 .. ch63,float,arbitrary units,This channel's response on this trial
+channel_positions.csv,channel_id,int,-,"0-63, matches the chNN column suffix in channel_responses.csv"
+channel_positions.csv,grid_row,int,-,"Row position (0-7) in the 8x8 sensor array, for visualization only"
+channel_positions.csv,grid_col,int,-,"Column position (0-7) in the 8x8 sensor array, for visualization only"
