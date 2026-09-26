@@ -1,0 +1,10 @@
+field,type,units,description
+voltage_sessions.npz : session_id,"int16 array, shape (N_rows,)",-,Session index for each row. Join with session_protocol.csv.
+voltage_sessions.npz : time_ms,"float64 array, shape (N_rows,)",ms,Sample time within its session (t=0 is the start of that session's recording). NOT evenly spaced -- consecutive samples within a session have variable gaps.
+voltage_sessions.npz : V_obs_mV,"float32 array, shape (N_rows,)",mV,Observed (noisy) membrane voltage at the corresponding time_ms.
+session_protocol.csv : session_id,int,-,"Session index, 0-5."
+session_protocol.csv : mean_dt_ms,float,ms,"The COMMANDED mean inter-sample interval for this session's acquisition. The ACTUAL sample-to-sample gaps vary around this mean -- see time_ms directly for the exact, irregular spacing realized in this session."
+session_protocol.csv : n_samples,int,-,Number of samples recorded in this session.
+session_protocol.csv : duration_ms,float,ms,Total recording duration for this session.
+session_protocol.csv : gamma_cv,float,-,Coefficient of variation of the inter-sample interval distribution (same for every session).
+session_protocol.csv : role,string,-,'fit' = intended for parameter estimation. 'holdout' = reserved for validation; do not use these sessions when fitting model parameters.

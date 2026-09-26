@@ -1,0 +1,5 @@
+{
+  "sigma_obs": 0.01,
+  "units": "same units as E_obs / I_obs (dimensionless population activity)",
+  "description": "Standard deviation of the recording system's additive measurement noise, from an independent instrument calibration (e.g. a blank/no-signal recording). This value is KNOWN and may be used directly in your analysis; it is not something you need to estimate from the population activity data itself. It does NOT include the population's own intrinsic activity fluctuations, which are not disclosed."
+}

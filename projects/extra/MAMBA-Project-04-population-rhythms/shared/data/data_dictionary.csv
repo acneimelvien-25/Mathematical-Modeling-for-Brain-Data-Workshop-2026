@@ -1,0 +1,14 @@
+field,type,units,description
+population_traces.npz : t_ms,"float32 array, shape (T,)",ms,"Recording time axis (t=0 is the start of the RECORDED segment, i.e. after the burn-in period has already elapsed). Shared by every trial."
+population_traces.npz : E_obs,"float32 array, shape (N_trials, T)",-,Observed (noisy) excitatory population activity for each trial.
+population_traces.npz : I_obs,"float32 array, shape (N_trials, T)",-,Observed (noisy) inhibitory population activity for each trial.
+population_traces.npz : condition_id,"int16 array, shape (N_trials,)",-,Stimulus condition index for each row of E_obs/I_obs. Join with stimulus_protocol.csv.
+population_traces.npz : trial,"int16 array, shape (N_trials,)",-,Trial number within its condition (0-indexed).
+stimulus_protocol.csv : condition_id,int,-,"Stimulus condition index, 0-5."
+stimulus_protocol.csv : I_I,float,model input units,Commanded external drive to the inhibitory population for this condition (the experiment's control variable -- analogous to a pharmacological or optogenetic manipulation of inhibitory tone). This value IS given; the model's other parameters are not.
+stimulus_protocol.csv : n_trials,int,-,Number of repeated trials recorded at this condition.
+stimulus_protocol.csv : burn_in_ms,float,ms,"Duration simulated (stochastically) and DISCARDED before recording began, to let the population settle onto its stationary fluctuation distribution."
+stimulus_protocol.csv : duration_ms,float,ms,Recorded duration per trial (after burn-in).
+stimulus_protocol.csv : dt_recorded_ms,float,ms,Sample interval of E_obs / I_obs.
+stimulus_protocol.csv : role,string,-,'fit' = intended for parameter estimation. 'holdout' = reserved for validation; do not use these conditions when fitting model parameters.
+noise_calibration.json : sigma_obs,float,same as E_obs/I_obs,KNOWN (disclosed) measurement-noise standard deviation from an independent instrument calibration. See noise_calibration.json for details.

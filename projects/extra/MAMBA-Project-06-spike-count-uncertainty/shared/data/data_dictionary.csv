@@ -1,0 +1,8 @@
+file,column,type,units,description
+trial_protocol.csv,trial_id,int,-,"Unique trial identifier, 0..1249; joins to spike_times.csv"
+trial_protocol.csv,condition_pct,float,% Michelson contrast,"Stimulus contrast for this trial (one of 6, 12, 25, 50, 100)"
+trial_protocol.csv,condition_role,str,-,'fit' or 'holdout' -- see shared/data/README.md for what this means and how it must be used
+trial_protocol.csv,trial_duration_ms,float,ms,Total recorded duration of this trial from stimulus onset (t=0)
+spike_times.csv,trial_id,int,-,Joins to trial_protocol.csv
+spike_times.csv,condition_pct,float,% Michelson contrast,"Redundant with trial_protocol.csv, included for convenience"
+spike_times.csv,spike_time_ms,float,ms,Time of a single spike relative to stimulus onset (t=0) in this trial; one row per spike (trials with 0 spikes contribute no rows)
