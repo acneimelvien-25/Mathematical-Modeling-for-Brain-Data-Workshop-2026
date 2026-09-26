@@ -1,8 +1,0 @@
-condition_id,I_dc_uA_per_cm2,n_trials,duration_ms,dt_recorded_ms,role
-0,0.0,10,200.0,0.05,fit
-1,1.0,10,200.0,0.05,fit
-2,1.7,10,200.0,0.05,fit
-3,4.0,10,200.0,0.05,holdout
-4,6.0,10,200.0,0.05,holdout
-5,8.0,10,200.0,0.05,fit
-6,14.0,10,200.0,0.05,fit
