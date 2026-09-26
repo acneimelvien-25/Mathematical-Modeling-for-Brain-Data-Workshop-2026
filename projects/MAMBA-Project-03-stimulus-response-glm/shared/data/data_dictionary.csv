@@ -1,0 +1,6 @@
+file,column,type,units,description
+trials.csv,trial_index,int,-,0-indexed trial order within the session (this IS the session-time variable)
+trials.csv,orientation_deg,float,degrees,"Grating orientation shown on this trial: one of 0, 45, 90, 135"
+trials.csv,contrast_pct,float,% Michelson contrast,"Grating contrast shown on this trial: one of 12.5, 25, 50, 100"
+trials.csv,response,float,arbitrary units (peak dF/F),"Trial-evoked response amplitude, this neuron"
+trials.csv,trial_role,str,-,'fit' or 'holdout' -- see shared/data/README.md for what this means and how it must be used

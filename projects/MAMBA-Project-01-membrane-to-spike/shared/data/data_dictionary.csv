@@ -1,0 +1,14 @@
+field,type,units,description
+voltage_traces.npz : t_ms,"float32 array, shape (T,)",ms,"Recording time axis, shared by every trial. Sample interval = 0.05 ms."
+voltage_traces.npz : V_obs_mV,"float32 array, shape (N_trials, T)",mV,Observed (noisy) membrane potential for each trial. Row order matches condition_id/trial arrays.
+voltage_traces.npz : condition_id,"int16 array, shape (N_trials,)",-,Stimulus condition index for each row of V_obs_mV. Join with stimulus_protocol.csv.
+voltage_traces.npz : trial,"int16 array, shape (N_trials,)",-,Trial number within its condition (0-indexed).
+spike_times.csv : condition_id,int,-,Stimulus condition index.
+spike_times.csv : trial,int,-,Trial number within its condition (0-indexed).
+spike_times.csv : spike_time_ms,float,ms,"Detected spike time within the trial, from an independent spike detector. Not derived from V_obs_mV directly -- do not expect exact sample alignment."
+stimulus_protocol.csv : condition_id,int,-,"Stimulus condition index, 0-6."
+stimulus_protocol.csv : I_dc_uA_per_cm2,float,uA/cm^2,Commanded (DC) injected current for this condition. The true injected current fluctuates around this value -- see handout Section 2 for the noise model.
+stimulus_protocol.csv : n_trials,int,-,Number of repeated trials recorded at this condition.
+stimulus_protocol.csv : duration_ms,float,ms,Recording duration per trial.
+stimulus_protocol.csv : dt_recorded_ms,float,ms,Sample interval of V_obs_mV.
+stimulus_protocol.csv : role,string,-,'fit' = intended for parameter estimation. 'holdout' = reserved for validation; do not use these conditions when fitting model parameters.

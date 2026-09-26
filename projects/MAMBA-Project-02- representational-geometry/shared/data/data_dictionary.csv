@@ -1,0 +1,10 @@
+field,type,units,description
+population_responses.npz : spike_counts,"int16 array, shape (N_rows, M)",spikes,"Trial-level spike count for every neuron, one row per (stimulus_id, trial) pair. M=80 neurons (columns)."
+population_responses.npz : stimulus_id,"int16 array, shape (N_rows,)",-,Stimulus index for each row of spike_counts. Join with stimulus_grid.csv.
+population_responses.npz : trial,"int16 array, shape (N_rows,)",-,Trial number within its stimulus (0-indexed).
+stimulus_grid.csv : stimulus_id,int,-,"Stimulus index, 0-63 (an 8x8 grid)."
+stimulus_grid.csv : feature_x,float,"dimensionless, in [-1,1]",First stimulus feature coordinate (e.g. one axis of a 2-D structured stimulus space).
+stimulus_grid.csv : feature_y,float,"dimensionless, in [-1,1]",Second stimulus feature coordinate.
+stimulus_grid.csv : n_trials,int,-,Number of repeated trials recorded at this stimulus.
+stimulus_grid.csv : integration_time_s,float,s,Spike-count integration window used for every trial.
+stimulus_grid.csv : role,string,-,'fit' = intended for PCA-basis and decoder training. 'holdout' = reserved for validation; do not use these stimuli when fitting anything.
