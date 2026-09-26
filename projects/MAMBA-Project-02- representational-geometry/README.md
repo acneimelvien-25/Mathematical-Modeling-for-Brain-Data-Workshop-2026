@@ -1,4 +1,4 @@
-# Project 03 (Simple Version) — See the Shape of a Neural Code
+# Project 02 — See the Shape of a Neural Code
 
 A **one-day project** for MAMBA Workshop 2026 participants.
 See `student/exercise_handout.docx` (or `.pdf`) for the full brief.
